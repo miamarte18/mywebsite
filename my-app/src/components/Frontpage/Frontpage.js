@@ -1,86 +1,57 @@
-import React from "react";
-import moon from "../../assets/moon.png";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Home } from "../../portfolio";
 import "./Home.css";
 
-export const Frontpage = () => {
+const Frontpage = () => {
+  const { name, role, description, resume, social } = Home;
+
   return (
-    <div className="frontpage">
-      <div className="div">
-        <div className="socials">
-          <div className="resumebox">
-            <div className="group">
-              <div className="overlap-group">
-                <div className="text-wrapper">Resume</div>
-              </div>
-            </div>
-          </div>
+    <div className="about center">
+      {name && (
+        <h1>
+          Hi, I am <span className="about__name">{name}.</span>
+        </h1>
+      )}
 
-          <div className="github" />
+      {role && <h2 className="about__role">A {role}.</h2>}
+      <p className="about__desc">{description && description}</p>
 
-          <div className="linkedln" />
-        </div>
-
-        <div className="info-box">
-          <div className="about">
-            <p className="p">
-              Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta
-              facilis perspiciatis corporis nulla aspernatur. Autem eligendi
-              rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque
-              perspiciatis! Maiores minima consectetur.
-            </p>
-          </div>
-
-          <div className="name-role">
-            <div className="role">
-              <div className="text-wrapper-2">A Software Engineer.</div>
-            </div>
-
-            <div className="name">
-              <p className="hi-i-am-mia-marte">
-                <span className="span">Hi, I am</span>
-
-                <span className="text-wrapper-3">&nbsp;</span>
-
-                <a
-                  href="https://www.liinks.co/miamarte"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <span className="text-wrapper-4">Mia Marte.</span>
-                </a>
-
-                <span className="text-wrapper-3">&nbsp;</span>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="header-navbar">
-          <div className="logo">
-            <a
-              className="text-wrapper-5"
-              href="https://github.com/Miamarte18"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              MM.
-            </a>
-          </div>
-
-          <a href="#projects" className="text-wrapper-6">
-            projects
+      <div className="about__contact center">
+        {resume && (
+          <a href={resume}>
+            <span type="button" className="btn btn--outline">
+              Resume
+            </span>
           </a>
-          <a href="#skills" className="text-wrapper-7">
-            skills
-          </a>
-          <a href="#contact" className="text-wrapper-8">
-            contact
-          </a>
+        )}
 
-          <img className="moon" alt="Moon" src={moon} />
-        </div>
+        {social && (
+          <>
+            {social.github && (
+              <a
+                href={social.github}
+                aria-label="github"
+                className="link link--icon"
+              >
+                <GitHubIcon />
+              </a>
+            )}
+
+            {social.linkedin && (
+              <a
+                href={social.linkedin}
+                aria-label="linkedin"
+                className="link link--icon"
+              >
+                <LinkedInIcon />
+              </a>
+            )}
+          </>
+        )}
       </div>
     </div>
   );
 };
+
 export default Frontpage;

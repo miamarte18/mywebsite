@@ -1,26 +1,39 @@
-import React from "react";
-import mailicon from "../../assets/mailicon.svg";
-
+import { contact } from "../../portfolio";
 import "./Contact.css";
 
-export const Contact = () => {
+const Contact = () => {
+  if (!contact.email && !contact.github && !contact.linkedin) return null;
+
   return (
-    <div className="contact">
-      <div className="contactus-info-wrapper">
-        <div className="contactus-info">
-          <div className="title-contact">
-            <p className="text-wrapper">Where you can find me:</p>
-          </div>
-          <div className="icons-contact">
-            <div className="github" />
-            <div className="linkedln" />
-            <img className="mailicon" alt="Mailicon" src={mailicon} />
-          </div>
-          <div className="created">
-            <div className="div">Created by Mia Marte</div>
-          </div>
-        </div>
+    <section className="section contact center" id="contact">
+      <div className="title">
+        <h2 className="section__title">Contact</h2>
       </div>
-    </div>
+      <div className="contact_btns">
+        {contact.email && (
+          <a href={`mailto:${contact.email}`}>
+            <span type="button" className="btn btn--outline">
+              Email me
+            </span>
+          </a>
+        )}
+        {contact.github && (
+          <a href={contact.github} target="_blank" rel="noopener noreferrer">
+            <span type="button" className="btn btn--outline">
+              GitHub
+            </span>
+          </a>
+        )}
+        {contact.linkedin && (
+          <a href={contact.linkedin} target="_blank" rel="noopener noreferrer">
+            <span type="button" className="btn btn--outline">
+              LinkedIn
+            </span>
+          </a>
+        )}
+      </div>
+    </section>
   );
 };
+
+export default Contact;

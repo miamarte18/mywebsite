@@ -1,171 +1,37 @@
-.frontpage {
-  background-color: #23283e;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
+.about {
+  flex-direction: column;
+  margin-top: 3em;
 }
 
-.frontpage .div {
-  background-color: #23283e;
-  height: 437px;
-  position: relative;
-  width: 780px;
+.about__name {
+  color: var(--clr-primary);
 }
 
-.frontpage .socials {
-  height: 42px;
-  left: 66px;
-  position: absolute;
-  top: 344px;
-  width: 224px;
+.about__role {
+  margin-top: 1.2em;
 }
 
-.frontpage .resumebox {
-  height: 42px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 118px;
+.about__desc {
+  font-size: 1rem;
+  max-width: 600px;
 }
 
-.frontpage .group {
-  height: 42px;
-  width: 120px;
+.about__desc,
+.about__contact {
+  margin-top: 2.4em;
 }
 
-.frontpage .overlap-group {
-  border: 1px solid;
-  border-color: #ffddeefe;
-  height: 42px;
-  position: relative;
-  width: 118px;
+.about .link--icon {
+  margin-right: 0.8em;
 }
 
-.frontpage .text-wrapper {
-  color: #90a0d9;
-  font-family: "Itim", Helvetica;
-  font-size: 20px;
-  font-weight: 400;
-  left: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 8px;
-  white-space: nowrap;
+.about .btn--outline {
+  margin-right: 1em;
 }
 
-.frontpage .github {
-  background-image: url(https://c.animaapp.com/IAAT7D6o/img/github-mark-white-1@2x.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 35px;
-  left: 135px;
-  position: absolute;
-  top: 3px;
-  width: 36px;
-}
-
-.frontpage .linkedln {
-  background-image: url(https://c.animaapp.com/IAAT7D6o/img/linkedin-1@2x.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 36px;
-  left: 188px;
-  position: absolute;
-  top: 3px;
-  width: 36px;
-}
-
-.frontpage .info-box {
-  height: 224px;
-  left: 66px;
-  position: absolute;
-  top: 85px;
-  width: 529px;
-}
-
-.frontpage .about {
-  height: 109px;
-  left: 0;
-  position: absolute;
-  top: 115px;
-  width: 531px;
-}
-
-.frontpage .p {
-  color: #ffffff;
-  font-family: "Itim", Helvetica;
-  font-size: 20px;
-  font-weight: 400;
-  left: 0;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 0;
-  width: 529px;
-}
-
-.frontpage .name-role {
-  height: 97px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 343px;
-}
-
-.frontpage .role {
-  height: 48px;
-  left: 0;
-  position: absolute;
-  top: 49px;
-  width: 330px;
-}
-
-.frontpage .text-wrapper-2 {
-  color: #cdcdff;
-  font-family: "Itim", Helvetica;
-  font-size: 36px;
-  font-weight: 400;
-  left: 0;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 0;
-  width: 328px;
-}
-
-.frontpage .name {
-  height: 48px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 345px;
-}
-
-.frontpage .hi-i-am-mia-marte {
-  color: transparent;
-  font-family: "Itim", Helvetica;
-  font-size: 40px;
-  font-weight: 400;
-  left: 0;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 0;
-  white-space: nowrap;
-  width: 343px;
-}
-
-.frontpage .span {
-  color: #cdcdff;
-}
-
-.frontpage .text-wrapper-3 {
-  color: #ffffff;
-}
-
-.frontpage .text-wrapper-4 {
-  color: #ffffff;
-  text-decoration: underline;
+@media (max-width: 600px) {
+  .app .about {
+    align-items: flex-start;
+    margin-top: 2em;
+  }
 }
