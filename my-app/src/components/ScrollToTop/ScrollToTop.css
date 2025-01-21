@@ -7,6 +7,8 @@
 
 @media (max-width: 900px) {
   .scroll-top {
-    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 4em;
   }
 }

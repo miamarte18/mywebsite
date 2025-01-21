@@ -6,7 +6,7 @@ const Footer = () => (
       href="https://github.com/miamarte18/mywebsite"
       className="link footer__link"
     >
-      Created By Mia Marte
+      © 2025 Mia Marte
     </a>
   </footer>
 );

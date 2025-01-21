@@ -28,10 +28,16 @@
 .about .btn--outline {
   margin-right: 1em;
 }
-
+span {
+  color: #6d6db9;
+}
 @media (max-width: 600px) {
   .app .about {
     align-items: flex-start;
-    margin-top: 2em;
+    margin-top: 3em;
+    height: auto;
+    width: 95vw;
+    margin-bottom: 6em;
+    scroll-behavior: smooth;
   }
 }

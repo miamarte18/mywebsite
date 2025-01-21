@@ -9,7 +9,7 @@ const Home = {
   name: "Mia Marte",
   role: "Software Engineer",
   description:
-    "Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.",
+    "I'm a computer science graduate who loves making digital tools that are easy to use. I focus on web development and app design, always looking for ways to make technology work better for people. Whether it's coding, fixing bugs, or trying new tools, I’m always curious and ready to learn. When I’m not coding, I enjoy cooking, journaling, and vlogging, which help keep me inspired. I try to bring creativity and simplicity into everything I do.",
   resume:
     "https://liinks-files.s3.amazonaws.com/files/nXuEMNu2fQA.pdf?AWSAccessKeyId=AKIAJJZ7THP6JOB5VZ6A&Expires=1737424206&Signature=ZC1szYE0EvT8E1%2BbeFYA6FniyTo%3D",
   social: {

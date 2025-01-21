@@ -1,6 +1,8 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Home } from "../../portfolio";
+import AnimText from "../Animations/AnimText.tsx";
+
 import "./Home.css";
 
 const Frontpage = () => {
@@ -10,7 +12,13 @@ const Frontpage = () => {
     <div className="about center">
       {name && (
         <h1>
-          Hi, I am <span className="about__name">{name}.</span>
+          Hi,{" "}
+          <AnimText
+            delay={0.5}
+            className="about__name"
+            baseText={`I am ${name}`}
+          />
+          .
         </h1>
       )}
 
