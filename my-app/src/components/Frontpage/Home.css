@@ -8,17 +8,17 @@
 }
 
 .about__role {
-  margin-top: 1.2em;
+  margin-top: 1em;
 }
 
 .about__desc {
-  font-size: 1rem;
-  max-width: 600px;
+  font-size: 1.2em;
+  max-width: 100vw;
 }
 
 .about__desc,
 .about__contact {
-  margin-top: 2.4em;
+  margin-top: 2em;
 }
 
 .about .link--icon {
