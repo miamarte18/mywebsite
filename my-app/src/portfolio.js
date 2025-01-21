@@ -51,15 +51,14 @@ const skills = [
   "HTML",
   "CSS",
   "JavaScript",
-  "TypeScript",
   "React",
-  "Redux",
-  "SASS",
-  "Material UI",
+  "Python",
+  "Swift",
+  "Bootstrap",
   "Git",
-  "CI/CD",
-  "Jest",
-  "Enzyme",
+  "SQL",
+  "Figma",
+  "Node.js",
 ];
 
 const contact = {
