@@ -43,5 +43,6 @@
   },
   "devDependencies": {
     "prettier": "^3.4.2"
-  }
+  },
+  "homepage": "/src/index.js"
 }
