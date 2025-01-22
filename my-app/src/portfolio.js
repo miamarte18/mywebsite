@@ -1,4 +1,3 @@
-import resume from "../src/assets/MiaVictoriaMarteResume.pdf";
 const header = {
   // all the properties are optional - can be left empty or deleted
   homepage: "/",
@@ -11,7 +10,8 @@ const Home = {
   role: "Software Engineer",
   description:
     "I'm a computer science graduate who loves making digital tools that are easy to use. I focus on web development and app design, always looking for ways to make technology work better for people. Whether it's coding, fixing bugs, or trying new tools, I’m always curious and ready to learn. When I’m not coding, I enjoy cooking, journaling, and vlogging, which help keep me inspired. I try to bring creativity and simplicity into everything I do.",
-  resume: resume,
+  resume:
+    "https://www.dropbox.com/scl/fi/zq61gqabztplpwm2x24y3/MiaVictoriaMarteResume.pdf?rlkey=1wz7mlb0j2xqapgtqi9jegohp&st=0i0m1t33&dl=0",
   social: {
     linkedin: "https://www.linkedin.com/in/miamarte/",
     github: "https://github.com/Miamarte18",
